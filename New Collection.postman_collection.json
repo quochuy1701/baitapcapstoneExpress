@@ -1,0 +1,335 @@
+{
+	"info": {
+		"_postman_id": "fcdcce4f-d483-48de-857a-368356549306",
+		"name": "New Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26696656"
+	},
+	"item": [
+		{
+			"name": "sign up",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7ImlkIjoxLCJob190ZW4iOiJUaG9yIiwiZW1haWwiOiJ0aG9yQGdtYWlsLmNvbSIsIm1hdF9raGF1IjoiMTIzNCIsIm5nYXlfc2luaCI6IjIwMjItMDUtMDVUMDA6MDA6MDAuMDAwWiIsImhpbmhfZGFpX2RpZW4iOm51bGwsImlzX3JlbW92ZSI6ZmFsc2V9LCJpYXQiOjE2ODI2ODg3NjEsImV4cCI6MTY4MjY4OTA2MX0.4LGbxGdQp2VoIfs12OyCsc7Sa4dhyaKwp_XLk--LUgg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7ImlkIjoxLCJob190ZW4iOiJUaG9yIiwiZW1haWwiOiJ0aG9yQGdtYWlsLmNvbSIsIm1hdF9raGF1IjoiMTIzNCIsIm5nYXlfc2luaCI6IjIwMjItMDUtMDVUMDA6MDA6MDAuMDAwWiIsImhpbmhfZGFpX2RpZW4iOm51bGwsImlzX3JlbW92ZSI6ZmFsc2V9LCJpYXQiOjE2ODI2ODczMzAsImV4cCI6MTY4MjY4NzYzMH0.1N07WUDKUZG0lMGllXOcHQbhriXEroNJz-I8emkkG2A",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"ho_ten\":\"huy1111\",\r\n    \"email\":\"batman111@gmail.com\",\r\n    \"mat_khau\":\"1234244444\"\r\n \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:9090/api/user/signup",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"api",
+						"user",
+						"signup"
+					],
+					"query": [
+						{
+							"key": "file",
+							"value": null,
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7ImlkIjoxLCJob190ZW4iOiJUaG9yIiwiZW1haWwiOiJ0aG9yQGdtYWlsLmNvbSIsIm1hdF9raGF1IjoiMTIzNCIsIm5nYXlfc2luaCI6IjIwMjItMDUtMDVUMDA6MDA6MDAuMDAwWiIsImhpbmhfZGFpX2RpZW4iOm51bGwsImlzX3JlbW92ZSI6ZmFsc2V9LCJpYXQiOjE2ODI2ODg3NjEsImV4cCI6MTY4MjY4OTA2MX0.4LGbxGdQp2VoIfs12OyCsc7Sa4dhyaKwp_XLk--LUgg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7ImlkIjoxLCJob190ZW4iOiJUaG9yIiwiZW1haWwiOiJ0aG9yQGdtYWlsLmNvbSIsIm1hdF9raGF1IjoiMTIzNCIsIm5nYXlfc2luaCI6IjIwMjItMDUtMDVUMDA6MDA6MDAuMDAwWiIsImhpbmhfZGFpX2RpZW4iOm51bGwsImlzX3JlbW92ZSI6ZmFsc2V9LCJpYXQiOjE2ODI2ODg3NjEsImV4cCI6MTY4MjY4OTA2MX0.4LGbxGdQp2VoIfs12OyCsc7Sa4dhyaKwp_XLk--LUgg",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\":\"batman111@gmail.com\",\r\n    \"mat_khau\":\"1234244444\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:9090/api/user/login",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"api",
+						"user",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get list image",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:9090/api/image/get-image",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"api",
+						"image",
+						"get-image"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "find image",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuZ3VvaV9kdW5nX2lkIjoxMSwiZW1haWwiOiJiYXRtYW4xMTFAZ21haWwuY29tIiwibWF0X2toYXUiOiIkMmIkMDgkRjVaNUFxOHN5UUZiLzBjZVV1UVV6ZXlmcVZVY1VyR1FueXlnRFIwM0hkUjBZVHVoVXUxRFMiLCJob190ZW4iOiJodXkxMTExIiwidHVvaSI6bnVsbCwiYW5oX2RhaV9kaWVuIjpudWxsLCJpYXQiOjE2ODQ1MDU5NTEsImV4cCI6MTY4NDUwNjI1MX0.MzpfknprdzWE-e6RYEBNXEcVv3Nowb3iqdCfCNfpK98",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"ten_hinh\":\"hinhiron\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:9090/api/image/find-image",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"api",
+						"image",
+						"find-image"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "find image information",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"hinh_id\":1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:9090/api/image/find-inforimage",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"api",
+						"image",
+						"find-inforimage"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "comment information",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"hinh_id\" : 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{domain}}api/comment/find-inforcomment",
+					"host": [
+						"{{domain}}api"
+					],
+					"path": [
+						"comment",
+						"find-inforcomment"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "image information is saved",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"hinh_id\" : 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{domain}}api/image/get-inforsaveimage",
+					"host": [
+						"{{domain}}api"
+					],
+					"path": [
+						"image",
+						"get-inforsaveimage"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create comment",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nguoi_dung_id\" : 1,\r\n    \"hinh_id\" :3,\r\n    \"noi_dung\": \"bức ảnh đẹp\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{domain}}api/comment/create-comment",
+					"host": [
+						"{{domain}}api"
+					],
+					"path": [
+						"comment",
+						"create-comment"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "find user",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "get list image save",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "get image create",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "delete image create",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nguoi_dung_id\" : 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{domain}}api/image/detele-imagecreate",
+					"host": [
+						"{{domain}}api"
+					],
+					"path": [
+						"image",
+						"detele-imagecreate"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
